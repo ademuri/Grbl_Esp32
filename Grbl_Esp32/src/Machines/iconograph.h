@@ -77,8 +77,11 @@
 
 #define DEFAULT_LASER_MODE 0 // false
 
+// 16mm diameter pulley, 200 steps/rev, 16x microstepping
 #define DEFAULT_X_STEPS_PER_MM 200.0
 #define DEFAULT_Y_STEPS_PER_MM 200.0
+
+// 4096 steps/rev, ??? diameter
 #define DEFAULT_Z_STEPS_PER_MM 100.0 // TODO: tune this
 
 #define DEFAULT_X_MAX_RATE 160000.0 // mm/min
