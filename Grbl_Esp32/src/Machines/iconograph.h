@@ -25,22 +25,22 @@
 //#define PEN_LASER_V1
 #define ICONOGRAPH_V1
 
-#define X_STEP_PIN              GPIO_NUM_22
-#define X_DIRECTION_PIN         GPIO_NUM_21
+#define X_STEP_PIN              GPIO_NUM_26
+#define X_DIRECTION_PIN         GPIO_NUM_22
 
-#define Y_STEP_PIN              GPIO_NUM_19
-#define Y_DIRECTION_PIN         GPIO_NUM_18
+#define Y_STEP_PIN              GPIO_NUM_17
+#define Y_DIRECTION_PIN         GPIO_NUM_16
 
 #define Z_UNIPOLAR
-#define Z_PIN_PHASE_0 GPIO_NUM_5
-#define Z_PIN_PHASE_1 GPIO_NUM_23
-#define Z_PIN_PHASE_2 GPIO_NUM_27
-#define Z_PIN_PHASE_3 GPIO_NUM_26
+#define Z_PIN_PHASE_0 GPIO_NUM_10
+#define Z_PIN_PHASE_1 GPIO_NUM_19
+#define Z_PIN_PHASE_2 GPIO_NUM_23
+#define Z_PIN_PHASE_3 GPIO_NUM_5
 
 //#define STEPPERS_DISABLE_PIN    GPIO_NUM_13
 
-//#define X_LIMIT_PIN     GPIO_NUM_2
-//#define Y_LIMIT_PIN             GPIO_NUM_4
+#define X_LIMIT_PIN     GPIO_NUM_14
+#define Y_LIMIT_PIN     GPIO_NUM_18
 
 //#define USING_SERVO  // uncomment to use this feature
 
@@ -66,7 +66,7 @@
 #define DEFAULT_HARD_LIMIT_ENABLE 0  // false
 
 #define DEFAULT_HOMING_ENABLE 0
-#define DEFAULT_HOMING_DIR_MASK 0 // move positive dir Z, negative X,Y
+#define DEFAULT_HOMING_DIR_MASK 0b11 // Move positive for X and Y
 #define DEFAULT_HOMING_FEED_RATE 200.0 // mm/min
 #define DEFAULT_HOMING_SEEK_RATE 1000.0 // mm/min
 #define DEFAULT_HOMING_DEBOUNCE_DELAY 250 // msec (0-65k)
