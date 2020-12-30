@@ -84,12 +84,12 @@
 // 4096 steps/rev, ??? diameter
 #define DEFAULT_Z_STEPS_PER_MM 100.0 // TODO: tune this
 
-#define DEFAULT_X_MAX_RATE 160000.0 // mm/min
-#define DEFAULT_Y_MAX_RATE 160000.0 // mm/min
+#define DEFAULT_X_MAX_RATE 2000.0 // mm/min
+#define DEFAULT_Y_MAX_RATE 2000.0 // mm/min
 #define DEFAULT_Z_MAX_RATE 100000.0 // mm/min
 
-#define DEFAULT_X_ACCELERATION 500.0 // mm/sec^2. 50 mm/sec^2 = 180000 mm/min^2
-#define DEFAULT_Y_ACCELERATION 500.0 // mm/sec^2
+#define DEFAULT_X_ACCELERATION 25.0 // mm/sec^2. 50 mm/sec^2 = 180000 mm/min^2
+#define DEFAULT_Y_ACCELERATION 25.0 // mm/sec^2
 #define DEFAULT_Z_ACCELERATION 500.0 // mm/sec^2
 
 #define DEFAULT_X_MAX_TRAVEL 300.0 // mm NOTE: Must be a positive value.
