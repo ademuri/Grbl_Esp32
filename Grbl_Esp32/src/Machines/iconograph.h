@@ -51,7 +51,7 @@
 #define DEFAULT_STEPPER_IDLE_LOCK_TIME 250 // stay on
 
 #define DEFAULT_STEPPING_INVERT_MASK 0 // uint8_t
-#define DEFAULT_DIRECTION_INVERT_MASK 0 // uint8_t
+#define DEFAULT_DIRECTION_INVERT_MASK 0b01 // uint8_t, invert X
 #define DEFAULT_INVERT_ST_ENABLE 0 // boolean
 #define DEFAULT_INVERT_LIMIT_PINS 1 // boolean
 #define DEFAULT_INVERT_PROBE_PIN 0 // boolean
@@ -62,13 +62,13 @@
 #define DEFAULT_ARC_TOLERANCE 0.002 // mm
 #define DEFAULT_REPORT_INCHES 0 // false
 
-#define DEFAULT_SOFT_LIMIT_ENABLE 0 // false
+#define DEFAULT_SOFT_LIMIT_ENABLE 1 // false
 #define DEFAULT_HARD_LIMIT_ENABLE 0  // false
 
-#define DEFAULT_HOMING_ENABLE 0
-#define DEFAULT_HOMING_DIR_MASK 0b11 // Move positive for X and Y
-#define DEFAULT_HOMING_FEED_RATE 200.0 // mm/min
-#define DEFAULT_HOMING_SEEK_RATE 1000.0 // mm/min
+#define DEFAULT_HOMING_ENABLE 1
+#define DEFAULT_HOMING_DIR_MASK 0 // Move positive for X and Y
+#define DEFAULT_HOMING_FEED_RATE 3000.0 // mm/min
+#define DEFAULT_HOMING_SEEK_RATE 500.0 // mm/min
 #define DEFAULT_HOMING_DEBOUNCE_DELAY 250 // msec (0-65k)
 #define DEFAULT_HOMING_PULLOFF 3.0 // mm
 
@@ -77,22 +77,22 @@
 
 #define DEFAULT_LASER_MODE 0 // false
 
-// 16mm diameter pulley, 200 steps/rev, 16x microstepping
-#define DEFAULT_X_STEPS_PER_MM 200.0
-#define DEFAULT_Y_STEPS_PER_MM 200.0
+// 40mm circumference pulley, 200 steps/rev, 32x microstepping
+#define DEFAULT_X_STEPS_PER_MM 160.0
+#define DEFAULT_Y_STEPS_PER_MM 160.0
 
 // 4096 steps/rev, ??? diameter
 #define DEFAULT_Z_STEPS_PER_MM 100.0 // TODO: tune this
 
-#define DEFAULT_X_MAX_RATE 2000.0 // mm/min
-#define DEFAULT_Y_MAX_RATE 2000.0 // mm/min
+#define DEFAULT_X_MAX_RATE 3000.0 // mm/min
+#define DEFAULT_Y_MAX_RATE 3000.0 // mm/min
 #define DEFAULT_Z_MAX_RATE 100000.0 // mm/min
 
-#define DEFAULT_X_ACCELERATION 25.0 // mm/sec^2. 50 mm/sec^2 = 180000 mm/min^2
-#define DEFAULT_Y_ACCELERATION 25.0 // mm/sec^2
+#define DEFAULT_X_ACCELERATION 30.0 // mm/sec^2. 50 mm/sec^2 = 180000 mm/min^2
+#define DEFAULT_Y_ACCELERATION 30.0 // mm/sec^2
 #define DEFAULT_Z_ACCELERATION 500.0 // mm/sec^2
 
-#define DEFAULT_X_MAX_TRAVEL 300.0 // mm NOTE: Must be a positive value.
-#define DEFAULT_Y_MAX_TRAVEL 300.0 // mm NOTE: Must be a positive value.
+#define DEFAULT_X_MAX_TRAVEL 500.0 // mm NOTE: Must be a positive value.
+#define DEFAULT_Y_MAX_TRAVEL 500.0 // mm NOTE: Must be a positive value.
 #define DEFAULT_Z_MAX_TRAVEL 100.0 
 
