@@ -32,7 +32,7 @@
 #define Y_DIRECTION_PIN         GPIO_NUM_16
 
 #define Z_UNIPOLAR
-#define Z_PIN_PHASE_0 GPIO_NUM_10
+#define Z_PIN_PHASE_0 GPIO_NUM_39
 #define Z_PIN_PHASE_1 GPIO_NUM_19
 #define Z_PIN_PHASE_2 GPIO_NUM_23
 #define Z_PIN_PHASE_3 GPIO_NUM_5
@@ -62,13 +62,13 @@
 #define DEFAULT_ARC_TOLERANCE 0.002 // mm
 #define DEFAULT_REPORT_INCHES 0 // false
 
-#define DEFAULT_SOFT_LIMIT_ENABLE 1 // false
+#define DEFAULT_SOFT_LIMIT_ENABLE 0 // false
 #define DEFAULT_HARD_LIMIT_ENABLE 0  // false
 
 #define DEFAULT_HOMING_ENABLE 1
 #define DEFAULT_HOMING_DIR_MASK 0 // Move positive for X and Y
-#define DEFAULT_HOMING_FEED_RATE 3000.0 // mm/min
-#define DEFAULT_HOMING_SEEK_RATE 500.0 // mm/min
+#define DEFAULT_HOMING_FEED_RATE 500.0 // mm/min
+#define DEFAULT_HOMING_SEEK_RATE 3000.0 // mm/min
 #define DEFAULT_HOMING_DEBOUNCE_DELAY 250 // msec (0-65k)
 #define DEFAULT_HOMING_PULLOFF 3.0 // mm
 
